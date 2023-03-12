@@ -1,127 +1,235 @@
+@font-face {
+  font-family: welcometext;
+  src: url(font/gomarice_usuazi_hosomozi.ttf);
+}
+
+@font-face {
+  font-family: goldenage;
+  src:url(font/Golden_Age_Regular.ttf);
+}
+
+@font-face{
+  font-family: motion_pictures;
+  src:url(font/my_black_color.ttf);
+}
+
+
+a[class="header_text"]{
+
+  text-decoration: none;
+}
+
 * {
-  -webkit-font-smoothing: antialiased;
-  text-rendering: optimizeLegibility;
+    padding: 0;
+    margin: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
 }
 
-html, body {
-  height: 100%;
+.my_profile_pic{
+  border-radius: 50%;
+   height: 40px; 
+   width:40px; 
+   margin-top:-6px; 
+   margin-right:8px; 
+   cursor:hand;
 }
 
-body {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  position: relative;
-  background: -webkit-linear-gradient(315deg, rgba(36, 46, 77, 0.9), rgba(137, 126, 121, 0.9));
-  background: linear-gradient(135deg, rgba(36, 46, 77, 0.9), rgba(137, 126, 121, 0.9));
-  font-family: 'Roboto', helvetica, arial, sans-serif;
-  font-size: 1.5em;
-  overflow:hidden;
-}
-body:before {
-  content: '';
+#dp_form_holder{
   position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  background-image: url(bg.png);
-  opacity: .3;
+  margin-top: -2000px; 
+ /*margin-left: -500px;   Uncomment if you want to see the file upload input form items*/
 }
 
-.login-form {
-  width: 100%;
-  padding: 2em;
-  position: relative;
-  background: rgba(0, 0, 0, 0.15);
-}
-.login-form:before {
-  content: '';
-  position: absolute;
-  top: -2px;
-  left: 0;
-  height: 2px;
-  width: 100%;
-  background: -webkit-linear-gradient(left, #35c3c1, #00d6b7);
-  background: linear-gradient(to right, #35c3c1, #00d6b7);
-}
-@media screen and (min-width: 600px) {
-  .login-form {
-    width: 50vw;
-    max-width: 15em;
-  }
+body{
+  overflow: hidden;
+  background-color: #d8d4d4;
+
 }
 
-.flex-row {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-bottom: 1em;
+#img-logo{
+  padding-top: 15px;
+  float: left;
+  margin-left:0;
 }
 
-.lf--input {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-  padding: 1em;
-  border: 0;
-  color: #8f8f8f;
-  font-size: 1rem;
+#header-btn{
+	padding: 15px 0 0 10px;
+	float:left;
 }
 
-.lf--submit {
-  display: block;
-  padding: 1em;
-  width: 100%;
-  background: -webkit-linear-gradient(left, #35c3c1, #00d6b7);
-  background: linear-gradient(to right, #35c3c1, #00d6b7);
-  border: 0;
-  color: #fff;
-  cursor: pointer;
-  font-size: .75em;
-  font-weight: 600;
-  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.2);
-}
-.lf--submit:focus {
-  outline: none;
-  -webkit-transition: -webkit-transform .15s ease;
-  transition: -webkit-transform .15s ease;
-  transition: transform .15s ease;
-  transition: transform .15s ease, -webkit-transform .15s ease;
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+input[id="btn-hide-text"]{
+	width:30px;
+	font-weight:bold;
 }
 
-#lf--errormsg {
-  margin-top: 1em;
-  color: #00d6b7;
-  font-size: .65em;
+.navimg {
+    float: left;
+    margin-top: -6px;
+    margin-right: 10px;
+}
+
+.main-header {
+    width: 100%;
+    background-color: rgba(69, 162, 255, 0.93);
+    margin: 0 auto;
+    height: 50px;
+    padding-bottom: 20px;
+    box-shadow: 5px 2px 10px white;
+}
+
+#header-text {
+
+    font-size: 1.6em;
+    color: white;
+    padding: 10px 0 0 10px;
+}
+
+.navigations {
+
+    margin-top: 1px;
+    border-right-width: 4px;
+    border-right-style: solid;
+    border-color: white;
+    width: 170px;
+    background-color: white;
+    height: 100%;
+    float: left;
+    box-shadow: 1px 2px 3px;
+    margin-right: 10px;
+}
+
+.content {
+    width: auto;
+    height: 90vh;
+    background-color: #f1f4f7;
+    overflow: auto;
+}
+
+.lists a {
+    text-decoration: none;
+    display: block;
+    padding: 14px;
+    font-size: 0.9em;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
+    transition: 1s;
+    color: rgb(122, 120, 120);
+    border-bottom: 0.1000px solid rgba(232, 230, 230, 0.61);
+}
+
+ul{
+  list-style: none;
+}
+
+.lists a:hover {
+  border-left: 4px solid rgba(69, 162, 255, 0.93);
+  transition: none;
+  border-radius: 10px;
+}
+
+/*.lists li a:focus{
+
+    background-color: rgb(49, 14, 143);
+    color: white;
+    padding-left: 30px;
+}*/
+
+#top-navigation{
+	padding-left:40px;
+	overflow:hidden;
+}
+
+#top-navigation-logo{
+  float: left;
+}
+
+#top-navigation-username{
+  float: right;
+  background-color: rgba(69, 162, 255, 0.93);
+  margin-right: 0;
+  padding: 10px 20px 0 25px;
+  height: 50px;
+}
+
+#top-navigation-username span{
+  color: white;
+  float: left;
+  font-size: 1.2em;
+  color: rgb(122, 120, 120);
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+#welcome-header-text{
+  padding : 6% 0 0 5%;
+  font-family: headertext;
+  font-size: 60px;
+
+}
+
+#welcome-text{
+      padding : 1% 0 0 6%;
+      font-family: headertext;
+      font-size:1.3em;
+      color: gray;
+}
+
+#welcome-body{
+  background-color: gray;
+  height: 300px;
+}
+
+#down-items{
+
+  margin-top: 20px;
+
+}
+
+.panel-box{
+  height: 180px;
+  padding-top: 70px;
   text-align: center;
+  border : 5px solid red;
+    background-color: pink;
+
 }
 
+.public-box-1{
 
-::-webkit-input-placeholder {
-  color: #8f8f8f;
+  background-color: blue;
+
 }
 
-::-moz-placeholder {
-  color: #8f8f8f;
+.public-box-2{
+
+  background-color: pink;
+
 }
 
-:-ms-input-placeholder {
-  color: #8f8f8f;
+.public-box-3{
+
+  background-color: pink;
+
 }
 
-::placeholder {
-  color: #8f8f8f;
+.public-box-4{
+
+  background-color : pink;
+
+}
+
+.first-panel-text{
+
+  font-family: goldenage;
+  font-size: 2.4em;
+}
+
+.second-panel-text{
+
+  font-family: goldenage;
+  font-size: 1.4em;
+
 }
