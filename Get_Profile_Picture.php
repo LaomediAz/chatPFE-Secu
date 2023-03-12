@@ -10,7 +10,7 @@
 
   $connection_String = mysqli_connect($host,$user,$pass,$database);
 
-  $command_query = "SELECT * FROM users_table WHERE user_fname = '$selected_username' AND user_lname = '$users_last_name'";
+  $command_query = "SELECT * FROM users_table WHERE user_fname = '$selected_username' AND user_lname='$users_last_name'";
 
   $execute_command_query = mysqli_query($connection_String,$command_query);
 
